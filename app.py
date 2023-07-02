@@ -47,7 +47,7 @@ def main():
                 response = chain.run(input_documents=docs, question=user_question)
                 print(cb)
             
-            st.write(response)
+            st.write(user_question + "\n" + response)
 
 if __name__ == '__main__':
     main()
